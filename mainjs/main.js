@@ -133,7 +133,7 @@ function editPupil(id) {
 }
 
 function deletePupil(id) {
-  let isConfirm = confirm("O'chirishni xohlaysizmi ?");
+  let isConfirm = confirm("Rostdan xam o'chirishni xohlaysizmi ?");
   if (isConfirm) {
     pupils = pupils.filter((pupil) => pupil.id != id);
     localStorage.setItem("pupils", JSON.stringify(pupils));
